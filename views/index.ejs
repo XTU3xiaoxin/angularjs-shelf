@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>篮球数据统计</title>
+
+
+      <script src="/javascripts/jquery-1.9.1.js"></script>
+      <script src="/javascripts/angular-1.5.min.js"></script>
+    <script src="/javascripts/angular-animate.min.js"></script>
+    <script src="/javascripts/angular-sanitize.js"></script>
+    <script src="/javascripts/angular-ui-router.min.js"></script>
+    <script src="/javascripts/ui-bootstrap-tpls-1.2.5.min.js"></script>
+      <script src="/build/js/bundle.min.js"></script>
+
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet"/>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+
+  </head>
+  <body ng-app="my-app">
+
+<header class="navbar navbar-default navbar-fixed-top navbar-inner" style="border:none;background-color: #272729; margin-bottom: 50px;">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" ng-click="isCollapsed = !isCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand visible-xs" href="#">UI Bootstrap</a>
+        </div>
+        <nav class="hidden-xs">
+            <ul class="nav navbar-nav">
+                <a href="/" role="button" class="navbar-brand">
+                    篮球数据统计
+                </a>
+                <li>
+                    <a ui-sref="index" role="button">
+                       设计页面入口 </b>
+                    </a>
+                    
+                </li>
+                <li><a href="#getting_started">数据排名</a></li>
+                <li><a ui-sref="formTest">表单例子</a></li>
+                <li><a ui-sref="main">UI-ROUTER</a></li>
+                <li><a ui-sref="directiveTest">angularjs指令</a></li>
+                <li><a ui-sref="account.login">TODO</a></li>
+                <li><a ui-sref="fs.show({id:1})">文件系统</a></li>
+            </ul>
+        </nav>
+       
+    </div>
+</header>
+
+
+        <div ui-view style="margin-top:50px;"></div>
+     </div>
+
+
+     
+ </body>
+</html>

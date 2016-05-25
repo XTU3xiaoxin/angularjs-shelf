@@ -1,0 +1,10 @@
+<div >
+    测试
+   <ul>
+     <li name="tttt" ng-repeat="comment in comments">
+            <span name="afee" ng-click="showUser($event)">{{comment.content}}</span>
+            <span style="margin-left:10px; display:none;"  >{{comment.username}}</span>
+       </li>
+   </ul>
+    <span ng-transclude></span>
+</div>

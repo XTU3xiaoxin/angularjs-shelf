@@ -1,0 +1,23 @@
+<div class="container">
+  <h2>New List</h2>
+  <form novalidate ng-submit="save(task)">
+
+    <div class="form-group">
+      <label>ID</label>
+      <input class="form-control" ng-model="task.id">
+    </div>
+
+    <div class="form-group">
+      <label>Name</label>
+      <input class="form-control" ng-model="task.name">
+    </div>
+    <div class="form-group">
+      <label>Description</label>
+      <input class="form-control" ng-model="task.description">
+    </div>
+
+    <div class="form-group">
+      <button class="btn btn-default">Save</button>
+    </div>
+  </form>
+</div>

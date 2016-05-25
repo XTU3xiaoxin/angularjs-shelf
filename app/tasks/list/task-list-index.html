@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="pull-right">
+    <a class="btn btn-default" ui-sref="tasks.new">新建task</a>
+  </div>
+  <h2>Todo Lists</h2>
+  <div class="list-group">
+    <a
+      class="list-group-item"
+      ui-sref="tasks.show({ id:task.id})"
+      ng-repeat="task in tasks">
+      <span class="badge badge-default pull-right">
+       {{task.id}}
+      </span>
+      {{task.name}}
+    </a>
+  </div>
+</div>

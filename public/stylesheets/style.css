@@ -1,0 +1,51 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+body {
+    font:14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.match-user-list {
+    margin:0px 0px;
+    background-color: #272729; 
+    padding:0 5%;
+}
+
+.match-user-row {
+
+}
+
+.match-user-item {
+    padding:5px 5px;
+}
+
+.match-user-desc {
+    padding:15px 10px;
+    background-color: #323234;
+     font:14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    color:#fff;
+}
+
+.match-user-desc .dl-horizontal {
+margin-bottom :0px;
+}
+
+.match-user-desc .dl-horizontal dt {
+     width:30%;
+     text-align: left;
+}
+
+.match-user-desc .dl-horizontal dd {
+    margin-left: 0px;
+}
+
+
+.test-font {
+    font-size:20px;
+    color:red;
+}

@@ -1,0 +1,12 @@
+    <div style="width:150px; display: inline-block; float:left; background-color: #F1F1F1;">
+        <ul>
+            <li ng-repeat="info in infos ">
+                <a ui-sref=".detail({id:info.id})">{{info.name}}</a>
+            </li>
+
+        </ul>
+    </div>
+
+    <div ui-view style="display: inline-block; margin-left:20px; float:left;">
+
+    </div>

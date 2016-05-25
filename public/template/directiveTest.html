@@ -1,0 +1,29 @@
+
+<script type="text/ng-template" id="helloHtml">
+    <div class="test-font">tttt <span ng-transclude></span> </div>
+</script>
+<div style="margin-top:50px; padding:20px;" ng-controller="directiveCtr"  >
+
+    <div>来自$rootScope的共享信息: {{message}}</div>
+
+    <div>指令一:
+      <hello>{{data.attr1}}</hello>
+    </div>
+    <div id="test">指令二:
+        <input type="text"  name="name" />
+        <input type="text" name="age" my-focus datas="{{data.attr1}}" >
+
+
+    </div>
+    <div> 指令三:
+        <div scope-t users-attr="data.users" userstr-attr="{{data.users}}" click-attr="sayHello(name)"></div>
+    </div>
+
+    <div> 指令四:
+        <div comment-list comments-attr="data.comments" >
+            <div clear-username></div>
+        </div>
+
+
+    </div>
+</div>
